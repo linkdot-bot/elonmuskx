@@ -146,6 +146,7 @@
             width: 100%;
             height: auto;
             display: block;
+            border-radius: 12px;
         }
 
         .intro-text {
@@ -304,12 +305,9 @@
         </header>
 
         <section class="tweet-section">
-            <h2 class="section-title"><i class="fab fa-twitter"></i> Latest Tweet</h2>
+            <h2 class="section-title"><i class="fab fa-x-twitter"></i> Latest Tweet</h2>
             <div class="tweet-image">
-                <!-- Placeholder for tweet image -->
-                <div style="background: #1e293b; height: 300px; display: flex; align-items: center; justify-content: center; border-radius: 12px;">
-                    <p>Tweet image will appear here</p>
-                </div>
+                <img src="https://i.postimg.cc/W16P7tbD/IMG-20251020-140840.jpg" alt="Elon Musk Tweet">
             </div>
         </section>
 
@@ -338,15 +336,15 @@
             <div class="buttons-container">
                 <a href="https://t.me/ElonMuskXChatbot" target="_blank" class="btn">
                     <i class="fab fa-telegram"></i>
-                    Message Elon on Telegram
+                    Message Elon Musk
                 </a>
                 
-                <a href="#" class="btn" id="tesla-btn">
+                <a href="https://www.tesla.com/" target="_blank" class="btn" id="tesla-btn">
                     <img src="https://upload.wikimedia.org/wikipedia/commons/b/bd/Tesla_Motors.svg" alt="Tesla" class="tesla-logo">
                     View Latest Tesla Update
                 </a>
                 
-                <a href="#" class="btn">
+                <a href="https://t.me/GrokAI" target="_blank" class="btn">
                     <i class="fas fa-comments"></i>
                     Join Grok Discussion
                 </a>
@@ -395,13 +393,7 @@
         // Initialize when page loads
         document.addEventListener('DOMContentLoaded', function() {
             fetchSpaceXData();
-            
-            // Add click handler for Tesla button
-            document.getElementById('tesla-btn').addEventListener('click', function(e) {
-                e.preventDefault();
-                document.getElementById('tesla-data').scrollIntoView({ behavior: 'smooth' });
-            });
         });
     </script>
 </body>
-</html>
+    </html>
